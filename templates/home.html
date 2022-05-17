@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header class="text-center p-3 m-3">
+    <h1 class="h1">Digital Printing</h1>
+</header>
+<div class="row p-3 m-3">
+    <div class="col">
+	<img alt="input" class="img-thumbnail" id="left_image" src="{{ url_for('input_image') }}" width="500px"/>
+    </div>
+    <div class="col">
+	<img alt="input" class="img-thumbnail" id="right_image" src="https://static.billboard.com/files/media/miley-cyrus-grammys-c-2019-billboard-u-1548-compressed.jpg" width="500px"/>
+    </div>
+</div>
+<div class="row p-3 m-3">
+    <div class="col text-center">
+	<button id="click_button" class="btn btn-danger shadow w-50">Click</button>
+    </div>
+</div>
+{% endblock %}
